@@ -1,9 +1,8 @@
-import image1 from "../assets/projects/project-1.jpg"
-import image2 from "../assets/projects/project-2.jpg"
-import image3 from "../assets/projects/project-3.jpg"
-import image4 from "../assets/projects/project-4.jpg"
-import image5 from "../assets/projects/project-5.jpg"
-import image6 from "../assets/projects/project-6.jpg"
+import image1 from "../assets/projects/project-1.png"
+import image2 from "../assets/projects/project-2.png"
+import image3 from "../assets/projects/project-3.png"
+import image4 from "../assets/projects/project-4.png"
+import image5 from "../assets/projects/project-5.png"
 
 export const personalInfosLeft = [
   { label: "first name", value: "Asma" },
@@ -44,14 +43,14 @@ export const experiences = [
     poste: "Stagiaire (PFE)",
     entreprise: "Artiweb, Monastir",
     description:
-      "Conception et développement d’une application e-commerce avec système de recommandation personnalisé. Technologies : React, Tailwind CSS, Laravel, MySQL.",
+      "Conception et développement d’une application e-commerce avec système de recommandation personnalisé.<br/> Technologies : React, Tailwind CSS, Laravel, MySQL.",
   },
   {
     annee: "2024",
     poste: "Stagiaire (Perfectionnement)",
     entreprise: "Top Niveau, Monastir",
     description:
-      "Développement d’un site web de gestion immobilière avec interface utilisateur dynamique. Technologies : Angular, Spring Boot, MySQL.",
+      "Développement d’un site web de gestion immobilière avec interface utilisateur dynamique.<br/> Technologies : Angular, Spring Boot, MySQL.",
   },
   {
     annee: "2023",
@@ -81,61 +80,51 @@ export const projects = [
   {
     index: 1,
     path: image1,
-    nom: "Image Project",
+    nom: "Projet Glower",
     type: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    preview: "www.envato.com",
+    client: "ISETSO University",
+    langages: "Angular",
+    preview: "glower-app.vercel.app",
     mediaType: "image",
   },
   {
     index: 2,
     path: image2,
-    nom: "Youtube Project",
-    type: "Video",
-    client: "Videohive",
-    langages: "Adobe After Effects",
-    preview: "www.videohive.net",
+    nom: "Projet Game Blogger",
+    type: "Website",
+    client: "ISETSO University",
+    langages: "Symfony, MySQL",
+    preview: "",
     mediaType: "image",
   },
   {
     index: 3,
     path: image3,
-    nom: "Slider Project",
-    type: "Web App",
-    client: "ThemeForest",
-    langages: "React, CSS, JavaScript",
-    preview: "www.themeforest.net",
+    nom: "Projet Scolarity",
+    type: "Site Web",
+    client: "ISETSO University",
+    langages: "Spring Boot, MySQL",
+    preview: "",
     mediaType: "image",
   },
   {
     index: 4,
     path: image4,
-    nom: "Local Video Project",
-    type: "Local Video",
-    client: "Local Studio",
-    langages: "MP4, H.264",
-    preview: "www.localstudio.tn",
+    nom: "Projet Vendora",
+    type: "Site Web",
+    client: "ARTIWEB",
+    langages: "React, Laravel, MySQL",
+    preview: "vendora-app.vercel.app",
     mediaType: "image",
   },
   {
     index: 5,
     path: image5,
-    nom: "Creative Landing",
-    type: "Landing Page",
-    client: "Creative Market",
-    langages: "HTML, SCSS, JS",
-    preview: "www.creativemarket.com",
-    mediaType: "image",
-  },
-  {
-    index: 6,
-    path: image6,
-    nom: "Portfolio Template",
-    type: "Portfolio",
-    client: "Dribbble",
-    langages: "HTML, CSS, JS",
-    preview: "www.dribbble.com",
+    nom: "Projet Emlak Ajancy",
+    type: "Site Web",
+    client: "Top Niveau",
+    langages: "Angular, SpringBoot, MySQL",
+    preview: "",
     mediaType: "image",
   }
 ];

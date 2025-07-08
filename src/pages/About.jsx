@@ -94,7 +94,7 @@ export default function About() {
                         <span className="time open-sans-font text-uppercase">{annee}</span>
                         <h5 className="font-poppins text-uppercase">{poste}<span className="place open-sans-font">{entreprise}</span>
                         </h5>
-                        <p className="open-sans-font">{description}</p>
+                        <p className="open-sans-font" dangerouslySetInnerHTML={{ __html: description }}></p>
                       </li>
                     ))}
                   </ul>
