@@ -27,14 +27,22 @@ export const counters = [
 ];
 
 export const skills = [
-  { nom: "HTML", pourcentage: "85" },
-  { nom: "javascript", pourcentage: "89"},
-  { nom: "css", pourcentage: "70"},
-  { nom: "php", pourcentage: "66"},
-  { nom: "symfony", pourcentage: "75"},
-  { nom: "laravel", pourcentage: "50"},
+  { nom: "HTML", pourcentage: "90" },
+  { nom: "CSS", pourcentage: "65"},
+  { nom: "Tailwind CSS", pourcentage: "85"},
+  { nom: "javascript", pourcentage: "70"},
+  { nom: "react", pourcentage: "75"},
   { nom: "angular", pourcentage: "65"},
-  { nom: "react", pourcentage: "45"},
+  { nom: "php", pourcentage: "80"},
+  { nom: "java", pourcentage: "75"},
+  { nom: "symfony", pourcentage: "85"},
+  { nom: "laravel", pourcentage: "60"},
+  { nom: "spring boot", pourcentage: "80"},
+  { nom: "flutter", pourcentage: "50"},
+  { nom: "android", pourcentage: "60"},
+  { nom: "power bi", pourcentage: "50"},
+  { nom: "machine learning", pourcentage: "55"},
+  { nom: "big data", pourcentage: "45"},
 ];
 
 export const experiences = [
