@@ -1,7 +1,24 @@
-import { FaEnvelopeOpen, FaFacebookF, FaPhoneSquareAlt, FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { FaEnvelopeOpen, FaPhoneSquareAlt, FaTelegramPlane } from "react-icons/fa";
 
 export default function Contact() {
+  const form = useRef();
+  const timeInput = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    timeInput.current.value = (new Date().toLocaleString());
+
+    emailjs.sendForm('service_portfolio', 'template_portfolio', form.current, 'lAjgV84qRncDk4OYi')
+      .then(() => {
+        alert('Message envoyé avec succès !');
+        form.current.reset();
+      }, (error) => {
+        alert('Erreur lors de l\'envoi : ' + error.text);
+      });
+  };
+
   return (
     <div>
       <div className="contact">
@@ -24,7 +41,7 @@ export default function Contact() {
                   <i className="position-absolute text-purpleLight"><FaPhoneSquareAlt/></i>
                   <span className="d-block">call me</span>+216 20 988 050 
                 </p>
-                <ul className=" -ml-1 pt-1 mb-5 flex flex-row gap-3">
+                {/* <ul className=" -ml-1 pt-1 mb-5 flex flex-row gap-3">
                   <li className={`w-[40px] h-[40px] rounded-full bg-bgLight dark:bg-bgDark hover:bg-purpleLight flex items-center justify-center relative`}>
                     <Link className="w-full h-full flex items-center justify-center relative group">
                       <i className={`text-md text-gray dark:text-white z-10 group-hover:text-white`}><FaFacebookF /></i>
@@ -40,10 +57,10 @@ export default function Contact() {
                       <i className={`text-md text-gray dark:text-white z-10 group-hover:text-white`}><FaYoutube /></i>
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <div className="col-12 col-lg-8">
-                <form className="contactform">
+                <form ref={form} onSubmit={sendEmail} className="contactform">
                   <div className="contactform">
                     <div className="row">
                       <div className="col-12 col-md-4">
@@ -53,8 +70,9 @@ export default function Contact() {
                         <input autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL" />
                       </div>
                       <div className="col-12 col-md-4">
-                        <input autocomplete="off" type="text" name="subject" placeholder="YOUR SUBJECT" />
+                        <input autocomplete="off" type="text" name="title" placeholder="YOUR SUBJECT" />
                       </div>
+                      <input type="hidden" name="time" ref={timeInput} />
                       <div className="col-12">
                         <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
                         <button className="button relative inline-flex items-center group">

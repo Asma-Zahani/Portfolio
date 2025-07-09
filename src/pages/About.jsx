@@ -39,10 +39,10 @@ export default function About() {
                       ))}
                     </ul>
                   </div>
-                  <div className="button relative inline-flex items-center group">
+                  <a href="/CV.pdf" download="Asma's CV.pdf" className="button relative inline-flex items-center group">
                     <span className="relative z-[2] transition-all duration-300 ease-out text-gray dark:text-white group-hover:text-white">Download CV</span>
                     <span className="absolute right-[-1px] top-[-1px] bottom-0 w-[55px] h-[55px] flex items-center justify-center text-[19px] text-white bg-purpleLight rounded-full"><FaDownload/></span>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
