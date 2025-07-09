@@ -64,17 +64,17 @@ export default function Contact() {
                   <div className="contactform">
                     <div className="row">
                       <div className="col-12 col-md-4">
-                        <input autocomplete="off" type="text" name="name" placeholder="YOUR NAME" />
+                        <input autocomplete="off" type="text" name="name" placeholder="YOUR NAME" required />
                       </div>
                       <div className="col-12 col-md-4">
-                        <input autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL" />
+                        <input autocomplete="off" type="email" name="email" placeholder="YOUR EMAIL" required />
                       </div>
                       <div className="col-12 col-md-4">
-                        <input autocomplete="off" type="text" name="title" placeholder="YOUR SUBJECT" />
+                        <input autocomplete="off" type="text" name="title" placeholder="YOUR SUBJECT" required />
                       </div>
                       <input type="hidden" name="time" ref={timeInput} />
                       <div className="col-12">
-                        <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                        <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
                         <button className="button relative inline-flex items-center group">
                           <span className="relative z-[2] transition-all duration-300 ease-out text-gray dark:text-white group-hover:text-white">Send Message</span>
                           <span className="absolute right-[-1px] top-[-1px] bottom-0 w-[55px] h-[55px] flex items-center justify-center text-[19px] text-white bg-purpleLight rounded-full"><FaTelegramPlane/></span>
