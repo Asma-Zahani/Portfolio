@@ -135,7 +135,7 @@ export const projects = [
     langages: "Angular, SpringBoot, MySQL",
     preview: "",
     mediaType: "image",
-  },
+  }, 
   {
     index: 6,
     path: image6,
