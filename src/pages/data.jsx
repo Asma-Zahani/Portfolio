@@ -3,6 +3,7 @@ import image2 from "../assets/projects/project-2.png"
 import image3 from "../assets/projects/project-3.png"
 import image4 from "../assets/projects/project-4.png"
 import image5 from "../assets/projects/project-5.png"
+import image6 from "../assets/projects/project-6.png"
 
 export const personalInfosLeft = [
   { label: "first name", value: "Asma" },
@@ -133,6 +134,16 @@ export const projects = [
     client: "Top Niveau",
     langages: "Angular, SpringBoot, MySQL",
     preview: "",
+    mediaType: "image",
+  },
+  {
+    index: 6,
+    path: image6,
+    nom: "Projet Flavory",
+    type: "Site Web",
+    client: "ISETSO University",
+    langages: "Next.js, Nest, MySQL",
+    preview: "flavory-app.vercel.app",
     mediaType: "image",
   }
 ];
