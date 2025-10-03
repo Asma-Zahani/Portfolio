@@ -21,8 +21,8 @@ export const personalInfosRight = [
 ];
 
 export const counters = [
-  { number: 1, label: "years of", sublabel: "experience" },
-  { number: 5, label: "completed", sublabel: "projects" },
+  { number: 0, label: "years of", sublabel: "experience" },
+  { number: 6, label: "completed", sublabel: "projects" },
   { number: 0, label: "Happy", sublabel: "customers" },
   { number: 0, label: "awards", sublabel: "won" }
 ];
